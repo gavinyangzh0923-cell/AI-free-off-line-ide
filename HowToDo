@@ -307,5 +307,3 @@ A: Because VS Code hosts the Cline extension, allowing users to interact with th
 Q5. Does this architecture require a cloud-based AI API?
 
 A: Not necessarily. When Ollama and the model are installed locally, the core inference workflow can operate without a cloud AI API, although downloading software and models initially requires internet access.
-
-技术上的一个重要提醒： 这套架构的关键不是简单地安装三个软件，而是确保四个组件之间的接口兼容。尤其需要确认 Qwen3-Coder 的具体模型标签、模型上下文长度、硬件内存需求，以及 Cline 当前版本对 Ollama 的支持情况。并非所有模型版本都能直接满足 Cline 的工具调用要求。
